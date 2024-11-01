@@ -1,0 +1,213 @@
+body{
+    overflow-y:hidden;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo-img {
+    width: 100px;
+    height: 90px;
+}
+
+.nav1 {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-li {
+    padding: 5px 10px;
+}
+
+.nav1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+@media Screen and (max-width: 768px) {
+    .container{
+        grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "NavBar"
+        "Hero"
+        "Home"
+        "AboutUs"
+        "JoinMember"
+        "ProfileScreen "
+        "SmallScale"
+        "MoneyRemittance "
+        "WealthManagement"
+        "MicroFinance"
+        "EmiCalculator";
+
+    }
+    .nav1 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #f8f8f8;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    .service{
+        cursor: pointer;
+    }
+    button{
+        cursor:pointer;
+    }
+    .nav1.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .acc{
+        margin-top: -50px;
+    }
+    .welcome{
+      display: none;
+    }
+    .smoke{
+        display: none;
+    }
+    .home-image{
+        display: none;
+    }
+    .vect{
+        display: none;
+    }
+    .hero{
+        display: block;
+    }
+    .forms{
+       margin-top: 250px;
+        margin-left: -5px;
+    }
+    .about-img{
+        display: none;
+    }
+    .home-heading{
+        margin-top: -45px;
+    }
+    .join-image{
+        display: none;
+    }
+    .joinMember{
+        margin-left: -20px;
+    }
+    .top{
+        margin-top: -80px;
+    }
+    .join{
+        display: block;
+    }
+    .AboutUs{
+        display: block;
+        margin-left: 5px;
+    }
+    .about-image{
+        display: none;
+    }
+    .about-heading{
+        margin-top: -20px;
+    }
+    .abtop{
+        margin-top: -35px;
+    }
+    .update{
+        display: block;
+    }
+    .profileScreen{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .update-image{
+        display: none;
+    }
+    .uptop{
+        margin-top: -95px;
+    }
+    .EmiCalculator{
+        display: block;
+        margin-left: 30px;
+    }
+    .emi-image{
+        display: none;
+    }
+    .emitop{
+        margin-top: -60px;
+    }
+    .small-image{
+        display: none;
+    }
+    .SmallScale{
+        display: block;
+    }
+    .sstop{
+        margin-top: -33px;
+    }
+    .MicroFinance{
+        display: block;
+    }
+    .micro-image{
+        display: none;
+    }
+    .mftop{
+        margin-top: 105px;
+    }
+    .MoneyRemittance{
+        display: block;
+    }
+    .money-image{
+        display: none;
+    }
+    .mrtop{
+        margin-top: -18px;
+    }
+    .WealthManagement{
+        display: block;
+    }
+    .wealth-image{
+        display: none;
+    }
+    .wmtop{
+        margin-top: 145px;
+    }
+    .Footer{
+        position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+    }
+}
